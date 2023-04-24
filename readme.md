@@ -1,7 +1,7 @@
 # Web Development Final Project - *Blackjack Hub*
 Submitted by: **Anuj Adulla**
 
-This web app: **A simple blackjack hub**
+This web app: **A simple blackjack hub. Visit the website: https://blackjack-hub.netlify.app/**
 
 Time spent: **24** hours spent in total
 
