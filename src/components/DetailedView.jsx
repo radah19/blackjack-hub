@@ -61,15 +61,15 @@ const DetailedView = () => {
 
           {
             post.hasBoard ? 
-                <div style={{backgroundColor:'green', marginRight:'300px', marginLeft:'380px', width:'900px', height: '550px', borderRadius:'10px'}}>
+                <div style={{backgroundColor:'green', marginRight:'300px', marginLeft:'300px', width:'900px', height: '550px', borderRadius:'10px'}}>
                     <Row md={6} style={{justifyContent:'center', paddingBlock:'25px'}}>
                         {
                             post.dealerCards.map((val) => 
                                 <Col>
                                     {
                                         (val.face != 'Unknown' && val.value != 'Unknown') ? 
-                                            <img src={`../src/assets/${val.value}_of_${val.face}.png`} style={{backgroundColor:'white', width:"130px", borderRadius:'10px'}}/> : 
-                                            <img src={`../src/assets/back.png`} style={{width:"130px", borderRadius:'10px'}}/>
+                                            <img src={`/assets/${val.value.toString().toLocaleLowerCase()}_of_${val.face.toString().toLocaleLowerCase()}.png`} style={{backgroundColor:'white', width:"130px", borderRadius:'10px'}}/> : 
+                                            <img src={`/assets/back.png`} style={{width:"130px", borderRadius:'10px'}}/>
                                     }
                                 </Col>
                             )
@@ -82,8 +82,8 @@ const DetailedView = () => {
                                 <Col>
                                     {
                                         (val.face != 'Unknown' && val.value != 'Unknown') ? 
-                                            <img src={`../src/assets/${val.value}_of_${val.face}.png`} style={{backgroundColor:'white', width:"130px", borderRadius:'10px'}}/> : 
-                                            <img src={`../src/assets/back.png`} style={{width:"130px", borderRadius:'10px'}}/>
+                                            <img src={`/assets/${val.value.toString().toLocaleLowerCase()}_of_${val.face.toString().toLocaleLowerCase()}.png`} style={{backgroundColor:'white', width:"130px", borderRadius:'10px'}}/> : 
+                                            <img src={`/assets/back.png`} style={{width:"130px", borderRadius:'10px'}}/>
                                     }
                                 </Col>
                             )
