@@ -10,6 +10,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'; 
 
+import '../src/assets/back.png';
+
 const DetailedView = () => {
     const {id} = useParams();
     const [post, setPost] = useState({});
