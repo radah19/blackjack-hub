@@ -90,7 +90,7 @@ const ReadPosts = () => {
                 posts ?
                 posts.map((post) => 
                     <CardDisplay post={post} />
-                ) : <img src='../assets/spinner2.gif'/>
+                ) : <img src='/assets/spinner2.gif'/>
 
                 : 
 
