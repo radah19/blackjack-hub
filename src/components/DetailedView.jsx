@@ -10,8 +10,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'; 
 
-import '../assets/back.png';
-
 const DetailedView = () => {
     const {id} = useParams();
     const [post, setPost] = useState({});
@@ -71,7 +69,7 @@ const DetailedView = () => {
                                     {
                                         (val.face != 'Unknown' && val.value != 'Unknown') ? 
                                             <img src={`../src/assets/${val.value}_of_${val.face}.png`} style={{backgroundColor:'white', width:"130px", borderRadius:'10px'}}/> : 
-                                            <img src={`../assets/back.png`} style={{width:"130px", borderRadius:'10px'}}/>
+                                            <img src={`../src/assets/back.png`} style={{width:"130px", borderRadius:'10px'}}/>
                                     }
                                 </Col>
                             )
@@ -85,7 +83,7 @@ const DetailedView = () => {
                                     {
                                         (val.face != 'Unknown' && val.value != 'Unknown') ? 
                                             <img src={`../src/assets/${val.value}_of_${val.face}.png`} style={{backgroundColor:'white', width:"130px", borderRadius:'10px'}}/> : 
-                                            <img src={`../assets/back.png`} style={{width:"130px", borderRadius:'10px'}}/>
+                                            <img src={`../src/assets/back.png`} style={{width:"130px", borderRadius:'10px'}}/>
                                     }
                                 </Col>
                             )
